@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
-using ExemploHTTP.Models;
-using AndroidX.Emoji2.Text.FlatBuffer;
+
 using System.Text.Json;
 using System.Linq.Expressions;
 using System.Diagnostics;
+using ExemploHTTP.Models;
 
 
 namespace ExemploHTTP.Services
@@ -16,8 +16,10 @@ namespace ExemploHTTP.Services
     public class RestServices
     {
         HttpClient client;
-        private Post post;
-        private List<Post> posts;
+        private Foto foto; 
+
+        private List<Foto> fotos;
+        
         private JsonSerializerOptions _serializerOptions;
 
         RestServices()
@@ -30,22 +32,24 @@ namespace ExemploHTTP.Services
 
         }
 
-        public async Task<List<Post>> getPostsAsync()
+        public async Task<List<Foto>> getPhotosAsync() 
         {
-            Uri uri = new Uri("https://jsonplaceholder.typicode.com/posts");
+            Uri uri = new Uri("https://jsonplaceholder.typicode.com/photos");
             try {
                 HttpResponseMessage response = await client.GetAsync(uri);
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();
-                    posts = JsonSerializer.Deserialize<List<Post>>(content, _serializerOptions);
+
+
+                    fotos = JsonSerializer.Deserialize<List<Foto>>(content, _serializerOptions);
                 } 
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
             }
-            return posts;
+            return fotos;
 
         }
     }

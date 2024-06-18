@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iplwmczNcqbMdj+UWrcNwLd9kE6cbu5vmJShhPAtfDTPwCg3rz+RL4vn4uV5fQlqKcznXCUJfvF2KKwrevYy/w==",
+  "dgSpecHash": "6jPt5lKa+59WajIMayXaYQ+vk4vzHJHdvqhBGs+VkJMXtFxfMGR4aOrcELLovnIHv+zibVtWyIyjYjWo7+KLtw==",
   "success": true,
-  "projectFilePath": "D:\\3AI_EloLua\\PAM2\\ExemploHTTP\\ExemploHTTP\\ExemploHTTP.csproj",
+  "projectFilePath": "D:\\3AI_EloLua\\PAM2\\Photos_18\\ExemploHTTP\\ExemploHTTP.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\etechas\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

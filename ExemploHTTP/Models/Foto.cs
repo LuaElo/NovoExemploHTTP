@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ExemploHTTP.Models
 {
-    public class Post
-    { 
+    public class Foto
+    {
+        public int AlbumId { get; set; }
         public int UserId { get; set; }
         public int Id { get; set; }
         private string Title { get; set; }
-        private string Body { get; set; }
-
+        public string Url { get; set; }
+        public string ThumbnailUrl { get; set; }
     }
 }
